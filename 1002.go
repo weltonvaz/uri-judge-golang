@@ -1,14 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-
 	var raio float64
-	var resul float64
-	pi := 3.14159
-	fmt.Scanln(&raio)
-	fmt.Printf("A=")
-	resul := raio * *2
-	fmt.Printf("%.4g", pi*resul)
+	var area float64
+	fmt.Scanf("%f", &raio)
+	area = ((raio * 2) * 3.14159)
+	fmt.Println("A= ", area)
 }
