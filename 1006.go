@@ -4,9 +4,10 @@ import "fmt"
 
 func main() {
 
-	var A, B float64
+	var A, B, C float64
 	fmt.Scanln(&A)
 	fmt.Scanln(&B)
-	s := fmt.Sprintf("%.5f", ((3.5*A)+(7.5*B))/11)
+	fmt.Scanln(&C)
+	s := fmt.Sprintf("%.1f", ((2*A)+(3*B)+(5*C))/10)
 	fmt.Println("MEDIA =", s)
 }
